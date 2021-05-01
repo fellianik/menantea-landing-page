@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font css -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/ico" href="img/profile3.png">
+    <title>Menantea Landing Page</title>
+  </head>
+  <body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="img/logo.png" alt="logo" /></a>
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Sudah hadir di Indonesia<br /><span>Menantea</span></h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus enim, quo similique architecto labore illum? Recusandae numquam, saepe accusamus possimus amet dignissimos fugiat odio totam illo quis harum reprehenderit
+                    tempore.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/1.png" class="minuman" alt="gambar 1" />
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/thumb1.png" alt="thumb1" onclick="imgSlider('img/1.png'); changeCircleColor('#7c976a')"/></li>
+            <li><img src="img/thumb2.png" alt="thumb2" onclick="imgSlider('img/2.png'); changeCircleColor('rgb(240, 208, 121)')"/></li>
+            <li><img src="img/thumb3.png" alt="thumb3" onclick="imgSlider('img/3.png'); changeCircleColor('rgb(230, 126, 99)')"/></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="img/instagram.png" class="img1" alt="instagram"></i></li>
+            <li><a href="#"><img src="img/twitter.png" class="img2" alt="twitter"></i></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.minuman').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+  </body>
+</html>
